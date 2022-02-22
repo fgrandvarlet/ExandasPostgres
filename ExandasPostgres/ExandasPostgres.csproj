@@ -1,0 +1,441 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F07B807D-FB00-42E4-8C33-0E48AD9E036F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ExandasPostgres</RootNamespace>
+    <AssemblyName>ExandasPostgres</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\sextant.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EPPlus, Version=5.8.3.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.5.8.3\lib\net45\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="FirebirdSql.Data.FirebirdClient, Version=8.5.4.0, Culture=neutral, PublicKeyToken=3750abcc3150b00c, processorArchitecture=MSIL">
+      <HintPath>..\packages\FirebirdSql.Data.FirebirdClient.8.5.4\lib\netstandard2.0\FirebirdSql.Data.FirebirdClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.6.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Bcl.HashCode, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Bcl.HashCode.1.1.1\lib\net461\Microsoft.Bcl.HashCode.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IO.RecyclableMemoryStream, Version=1.4.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IO.RecyclableMemoryStream.1.4.1\lib\net46\Microsoft.IO.RecyclableMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql, Version=6.0.1.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Npgsql.6.0.1\lib\netstandard2.0\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Immutable, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.Immutable.6.0.0\lib\net461\System.Collections.Immutable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.4.7.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.6.0.0\lib\net461\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Text.Encodings.Web, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Encodings.Web.6.0.0\lib\net461\System.Text.Encodings.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.Json.6.0.0\lib\net461\System.Text.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Channels, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Channels.6.0.0\lib\net461\System.Threading.Channels.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks" />
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Components\BottomCommandPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\BottomCommandPanel.Designer.cs">
+      <DependentUpon>BottomCommandPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\ComparisonSetListPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\ComparisonSetListPanel.Designer.cs">
+      <DependentUpon>ComparisonSetListPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\ComparisonSetUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\ComparisonSetUserControl.Designer.cs">
+      <DependentUpon>ComparisonSetUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\ConnectionParamsListPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\ConnectionParamsListPanel.Designer.cs">
+      <DependentUpon>ConnectionParamsListPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\DeltaReportListPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\DeltaReportListPanel.Designer.cs">
+      <DependentUpon>DeltaReportListPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\FilterSettingListPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\FilterSettingListPanel.Designer.cs">
+      <DependentUpon>FilterSettingListPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\ListPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\ListPanel.Designer.cs">
+      <DependentUpon>ListPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\SchemaMappingListPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\SchemaMappingListPanel.Designer.cs">
+      <DependentUpon>SchemaMappingListPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\TitlePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Components\TitlePanel.Designer.cs">
+      <DependentUpon>TitlePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\CryptoUtil.cs" />
+    <Compile Include="Core\Defs.cs" />
+    <Compile Include="Core\Delegates.cs" />
+    <Compile Include="Core\Delta.Check.cs" />
+    <Compile Include="Core\Delta.cs" />
+    <Compile Include="Core\Delta.Domain.cs" />
+    <Compile Include="Core\Delta.Exclusion.cs" />
+    <Compile Include="Core\Delta.Extension.cs" />
+    <Compile Include="Core\Delta.ForeignKey.cs" />
+    <Compile Include="Core\Delta.ForeignTable.cs" />
+    <Compile Include="Core\Delta.ForeignTableColumn.cs" />
+    <Compile Include="Core\Delta.Function.cs" />
+    <Compile Include="Core\Delta.Index.cs" />
+    <Compile Include="Core\Delta.IndexColumn.cs" />
+    <Compile Include="Core\Delta.MaterializedView.cs" />
+    <Compile Include="Core\Delta.MaterializedViewColumn.cs" />
+    <Compile Include="Core\Delta.PrimaryKey.cs" />
+    <Compile Include="Core\Delta.Sequence.cs" />
+    <Compile Include="Core\Delta.Statistics.cs" />
+    <Compile Include="Core\Delta.Table.cs" />
+    <Compile Include="Core\Delta.TableColumn.cs" />
+    <Compile Include="Core\Delta.Trigger.cs" />
+    <Compile Include="Core\Delta.Type.cs" />
+    <Compile Include="Core\Delta.Unique.cs" />
+    <Compile Include="Core\Delta.View.cs" />
+    <Compile Include="Core\Delta.ViewColumn.cs" />
+    <Compile Include="Core\MetaDataLoader.cs" />
+    <Compile Include="Core\MetaDataLoader.Methods.cs" />
+    <Compile Include="Dao\DaoFactory.cs" />
+    <Compile Include="Dao\DataHandler.cs" />
+    <Compile Include="Dao\Firebird\AbstractDaoFirebird.cs" />
+    <Compile Include="Dao\Firebird\ComparisonSetDaoFirebird.cs" />
+    <Compile Include="Dao\Firebird\ConnectionParamsDaoFirebird.cs" />
+    <Compile Include="Dao\Firebird\DeltaReportDaoFirebird.cs" />
+    <Compile Include="Dao\Firebird\FilterSettingDaoFirebird.cs" />
+    <Compile Include="Dao\Firebird\LocalDaoFirebird.cs" />
+    <Compile Include="Dao\Firebird\ParameterDataDaoFirebird.cs" />
+    <Compile Include="Dao\Firebird\ReferenceDaoFirebird.cs" />
+    <Compile Include="Dao\Firebird\SchemaMappingDaoFirebird.cs" />
+    <Compile Include="Dao\IComparisonSetDao.cs" />
+    <Compile Include="Dao\IConnectionParamsDao.cs" />
+    <Compile Include="Dao\IDeltaReportDao.cs" />
+    <Compile Include="Dao\IFilterSettingDao.cs" />
+    <Compile Include="Dao\ILocalDao.cs" />
+    <Compile Include="Dao\IParameterDataDao.cs" />
+    <Compile Include="Dao\IReferenceDao.cs" />
+    <Compile Include="Dao\IRemoteDao.cs" />
+    <Compile Include="Dao\ISchemaMappingDao.cs" />
+    <Compile Include="Dao\ParameterData.cs" />
+    <Compile Include="Dao\PostgreSQL\AbstractDaoPostgreSQL.cs" />
+    <Compile Include="Dao\PostgreSQL\RemoteDaoPostgreSQL.cs" />
+    <Compile Include="Domain\AbstractConstraint.cs" />
+    <Compile Include="Domain\Check.cs" />
+    <Compile Include="Domain\AbstractColumn.cs" />
+    <Compile Include="Domain\ComparisonSet.cs" />
+    <Compile Include="Domain\ConnectionParams.cs" />
+    <Compile Include="Domain\Criteria.cs" />
+    <Compile Include="Domain\DeltaReport.cs" />
+    <Compile Include="Domain\Domain.cs" />
+    <Compile Include="Domain\EntityReference.cs" />
+    <Compile Include="Domain\Exclusion.cs" />
+    <Compile Include="Domain\Extension.cs" />
+    <Compile Include="Domain\FilterSetting.cs" />
+    <Compile Include="Domain\ForeignKey.cs" />
+    <Compile Include="Domain\ForeignTable.cs" />
+    <Compile Include="Domain\ForeignTableColumn.cs" />
+    <Compile Include="Domain\Function.cs" />
+    <Compile Include="Domain\Index.cs" />
+    <Compile Include="Domain\IndexColumn.cs" />
+    <Compile Include="Domain\MaterializedView.cs" />
+    <Compile Include="Domain\MaterializedViewColumn.cs" />
+    <Compile Include="Domain\AccessPrivilegesNormalizer.cs" />
+    <Compile Include="Domain\NormalizeHelpers.cs" />
+    <Compile Include="Domain\PostgresType.cs" />
+    <Compile Include="Domain\PrimaryKey.cs" />
+    <Compile Include="Domain\ProgressState.cs" />
+    <Compile Include="Domain\PropertyReference.cs" />
+    <Compile Include="Domain\SchemaMapping.cs" />
+    <Compile Include="Domain\Sequence.cs" />
+    <Compile Include="Domain\Statistics.cs" />
+    <Compile Include="Domain\Table.cs" />
+    <Compile Include="Domain\TableColumn.cs" />
+    <Compile Include="Domain\Trigger.cs" />
+    <Compile Include="Domain\Unique.cs" />
+    <Compile Include="Domain\View.cs" />
+    <Compile Include="Domain\ViewColumn.cs" />
+    <Compile Include="Forms\AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CompactLocalDatabaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CompactLocalDatabaseForm.Designer.cs">
+      <DependentUpon>CompactLocalDatabaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ComparisonSetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ComparisonSetForm.Designer.cs">
+      <DependentUpon>ComparisonSetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ConnectionParamsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ConnectionParamsForm.Designer.cs">
+      <DependentUpon>ConnectionParamsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DeltaReportListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DeltaReportListForm.Designer.cs">
+      <DependentUpon>DeltaReportListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FilterSettingListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FilterSettingListForm.Designer.cs">
+      <DependentUpon>FilterSettingListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\IDataFormManager.cs" />
+    <Compile Include="Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProgressForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProgressForm.Designer.cs">
+      <DependentUpon>ProgressForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SchemaMappingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SchemaMappingForm.Designer.cs">
+      <DependentUpon>SchemaMappingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SplashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SplashForm.Designer.cs">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\WaitCursor.cs" />
+    <Compile Include="Native\NativeMethods.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Strings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporting\ReportUtils.cs" />
+    <EmbeddedResource Include="Components\BottomCommandPanel.resx">
+      <DependentUpon>BottomCommandPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\ComparisonSetListPanel.resx">
+      <DependentUpon>ComparisonSetListPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\ComparisonSetUserControl.resx">
+      <DependentUpon>ComparisonSetUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\ConnectionParamsListPanel.resx">
+      <DependentUpon>ConnectionParamsListPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\DeltaReportListPanel.resx">
+      <DependentUpon>DeltaReportListPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\FilterSettingListPanel.resx">
+      <DependentUpon>FilterSettingListPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\ListPanel.resx">
+      <DependentUpon>ListPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\SchemaMappingListPanel.resx">
+      <DependentUpon>SchemaMappingListPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\TitlePanel.resx">
+      <DependentUpon>TitlePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CompactLocalDatabaseForm.resx">
+      <DependentUpon>CompactLocalDatabaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ComparisonSetForm.resx">
+      <DependentUpon>ComparisonSetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ConnectionParamsForm.resx">
+      <DependentUpon>ConnectionParamsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DeltaReportListForm.resx">
+      <DependentUpon>DeltaReportListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FilterSettingListForm.resx">
+      <DependentUpon>FilterSettingListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProgressForm.resx">
+      <DependentUpon>ProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SchemaMappingForm.resx">
+      <DependentUpon>SchemaMappingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SplashForm.resx">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Properties\Strings.fr.resx" />
+    <EmbeddedResource Include="Properties\Strings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B16x16_Cut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B16x16_Edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B16x16_Folder_Inbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\catchuprelease_rls.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f6016_001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sextant.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets" Condition="Exists('..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Ce projet fait référence à des packages NuGet qui sont manquants sur cet ordinateur. Utilisez l'option de restauration des packages NuGet pour les télécharger. Pour plus d'informations, consultez http://go.microsoft.com/fwlink/?LinkID=322105. Le fichier manquant est : {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets'))" />
+  </Target>
+</Project>

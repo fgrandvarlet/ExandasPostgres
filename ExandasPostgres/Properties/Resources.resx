@@ -1,0 +1,376 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="B16x16_Cut" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\B16x16_Cut.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="B16x16_Edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\B16x16_Edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="B16x16_Folder_Inbox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\B16x16_Folder_Inbox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="catchuprelease_rls" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\catchuprelease_rls.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="f6016_001" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\f6016_001.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IDIOMATIC" xml:space="preserve">
+    <value>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</value>
+  </data>
+  <data name="REFERENCES" xml:space="preserve">
+    <value>TABLE;OWNER
+TABLE;TABLESPACE_NAME
+TABLE;PERSISTENCE
+TABLE;ACCESS_METHOD
+TABLE;IS_PARTITIONED
+TABLE;IS_PARTITION
+TABLE;HAS_SUBCLASS
+TABLE;ROW_SECURITY
+TABLE;FORCE_ROW_SECURITY
+TABLE;DESCRIPTION
+TABLE;ACCESS_PRIVILEGES
+TABLE;OPTIONS
+TABLE;PARTITION_KEY
+TABLE;PARTITION_BOUND
+TABLE COLUMN;COLUMN_NUM
+TABLE COLUMN;DATA_TYPE
+TABLE COLUMN;COLLATION
+TABLE COLUMN;NULLABLE
+TABLE COLUMN;DATA_DEFAULT
+TABLE COLUMN;IDENTITY
+TABLE COLUMN;GENERATED
+TABLE COLUMN;STORAGE
+TABLE COLUMN;COMPRESSION
+TABLE COLUMN;STATISTICS_TARGET
+TABLE COLUMN;IS_LOCAL
+TABLE COLUMN;INHERITANCE_COUNT
+TABLE COLUMN;DESCRIPTION
+TABLE COLUMN;ACCESS_PRIVILEGES
+TABLE COLUMN;OPTIONS
+PRIMARY KEY;DEFINITION
+PRIMARY KEY;DEFERRABLE
+PRIMARY KEY;DEFERRED
+UNIQUE;DEFINITION
+UNIQUE;DEFERRABLE
+UNIQUE;DEFERRED
+FOREIGN KEY;DEFINITION
+FOREIGN KEY;DEFERRABLE
+FOREIGN KEY;DEFERRED
+FOREIGN KEY;VALIDATED
+FOREIGN KEY;INDEX_NAME
+FOREIGN KEY;REFERENCED_TABLE_NAME
+FOREIGN KEY;UPDATE_ACTION
+FOREIGN KEY;DELETE_ACTION
+FOREIGN KEY;MATCH_TYPE
+CHECK;DEFINITION
+CHECK;VALIDATED
+EXCLUSION;DEFINITION
+EXCLUSION;DEFERRABLE
+EXCLUSION;DEFERRED
+VIEW;OWNER
+VIEW;PERSISTENCE
+VIEW;DEFINITION
+VIEW;DESCRIPTION
+VIEW;ACCESS_PRIVILEGES
+VIEW;OPTIONS
+VIEW COLUMN;COLUMN_NUM
+VIEW COLUMN;DATA_TYPE
+VIEW COLUMN;COLLATION
+VIEW COLUMN;NULLABLE
+VIEW COLUMN;DATA_DEFAULT
+VIEW COLUMN;IDENTITY
+VIEW COLUMN;GENERATED
+VIEW COLUMN;STORAGE
+VIEW COLUMN;COMPRESSION
+VIEW COLUMN;STATISTICS_TARGET
+VIEW COLUMN;IS_LOCAL
+VIEW COLUMN;INHERITANCE_COUNT
+VIEW COLUMN;DESCRIPTION
+VIEW COLUMN;ACCESS_PRIVILEGES
+VIEW COLUMN;OPTIONS
+MATERIALIZED VIEW;OWNER
+MATERIALIZED VIEW;TABLESPACE_NAME
+MATERIALIZED VIEW;PERSISTENCE
+MATERIALIZED VIEW;ACCESS_METHOD
+MATERIALIZED VIEW;DEFINITION
+MATERIALIZED VIEW;DESCRIPTION
+MATERIALIZED VIEW;ACCESS_PRIVILEGES
+MATERIALIZED VIEW;OPTIONS
+MATERIALIZED VIEW COLUMN;COLUMN_NUM
+MATERIALIZED VIEW COLUMN;DATA_TYPE
+MATERIALIZED VIEW COLUMN;COLLATION
+MATERIALIZED VIEW COLUMN;NULLABLE
+MATERIALIZED VIEW COLUMN;DATA_DEFAULT
+MATERIALIZED VIEW COLUMN;IDENTITY
+MATERIALIZED VIEW COLUMN;GENERATED
+MATERIALIZED VIEW COLUMN;STORAGE
+MATERIALIZED VIEW COLUMN;COMPRESSION
+MATERIALIZED VIEW COLUMN;STATISTICS_TARGET
+MATERIALIZED VIEW COLUMN;IS_LOCAL
+MATERIALIZED VIEW COLUMN;INHERITANCE_COUNT
+MATERIALIZED VIEW COLUMN;DESCRIPTION
+MATERIALIZED VIEW COLUMN;ACCESS_PRIVILEGES
+MATERIALIZED VIEW COLUMN;OPTIONS
+FOREIGN TABLE;OWNER
+FOREIGN TABLE;SERVER
+FOREIGN TABLE;FDW_OPTIONS
+FOREIGN TABLE;PERSISTENCE
+FOREIGN TABLE;IS_PARTITION
+FOREIGN TABLE;HAS_SUBCLASS
+FOREIGN TABLE;ROW_SECURITY
+FOREIGN TABLE;FORCE_ROW_SECURITY
+FOREIGN TABLE;DESCRIPTION
+FOREIGN TABLE;ACCESS_PRIVILEGES
+FOREIGN TABLE COLUMN;COLUMN_NUM
+FOREIGN TABLE COLUMN;DATA_TYPE
+FOREIGN TABLE COLUMN;COLLATION
+FOREIGN TABLE COLUMN;NULLABLE
+FOREIGN TABLE COLUMN;DATA_DEFAULT
+FOREIGN TABLE COLUMN;IDENTITY
+FOREIGN TABLE COLUMN;GENERATED
+FOREIGN TABLE COLUMN;STORAGE
+FOREIGN TABLE COLUMN;COMPRESSION
+FOREIGN TABLE COLUMN;STATISTICS_TARGET
+FOREIGN TABLE COLUMN;IS_LOCAL
+FOREIGN TABLE COLUMN;INHERITANCE_COUNT
+FOREIGN TABLE COLUMN;DESCRIPTION
+FOREIGN TABLE COLUMN;ACCESS_PRIVILEGES
+FOREIGN TABLE COLUMN;OPTIONS
+FOREIGN TABLE COLUMN;FDW_OPTIONS
+SEQUENCE;OWNER
+SEQUENCE;DATA_TYPE
+SEQUENCE;START_VALUE
+SEQUENCE;MIN_VALUE
+SEQUENCE;MAX_VALUE
+SEQUENCE;INCREMENT_BY
+SEQUENCE;CYCLE
+SEQUENCE;CACHE_SIZE
+SEQUENCE;DESCRIPTION
+SEQUENCE;ACCESS_PRIVILEGES
+SEQUENCE;OWNED_BY
+INDEX;OWNER
+INDEX;TABLESPACE_NAME
+INDEX;PERSISTENCE
+INDEX;ACCESS_METHOD
+INDEX;IS_PARTITIONED
+INDEX;IS_PARTITION
+INDEX;HAS_SUBCLASS
+INDEX;IS_UNIQUE
+INDEX;IS_PRIMARY
+INDEX;IS_EXCLUSION
+INDEX;IMMEDIATE
+INDEX;IS_CLUSTERED
+INDEX;IS_VALID
+INDEX;DEFINITION
+INDEX;DESCRIPTION
+INDEX;OPTIONS
+INDEX COLUMN;COLUMN_NUM
+INDEX COLUMN;DATA_TYPE
+INDEX COLUMN;COLLATION
+INDEX COLUMN;NULLABLE
+INDEX COLUMN;DATA_DEFAULT
+INDEX COLUMN;IDENTITY
+INDEX COLUMN;GENERATED
+INDEX COLUMN;STORAGE
+INDEX COLUMN;COMPRESSION
+INDEX COLUMN;STATISTICS_TARGET
+INDEX COLUMN;IS_LOCAL
+INDEX COLUMN;INHERITANCE_COUNT
+INDEX COLUMN;DESCRIPTION
+INDEX COLUMN;ACCESS_PRIVILEGES
+INDEX COLUMN;OPTIONS
+TRIGGER;DEFINITION
+TRIGGER;ENABLED
+FUNCTION;ARGUMENT_DATA_TYPES
+FUNCTION;RESULT_DATA_TYPE
+FUNCTION;OWNER
+FUNCTION;FUNCTION_TYPE
+FUNCTION;VOLATILITY
+FUNCTION;PARALLEL
+FUNCTION;SECURITY
+FUNCTION;LANGUAGE
+FUNCTION;SOURCE_CODE
+FUNCTION;DEFINITION
+FUNCTION;DESCRIPTION
+FUNCTION;ACCESS_PRIVILEGES
+DOMAIN;OWNER
+DOMAIN;DATA_TYPE
+DOMAIN;COLLATION
+DOMAIN;NULLABLE
+DOMAIN;DATA_DEFAULT
+DOMAIN;CHECK_CONSTRAINT
+DOMAIN;DESCRIPTION
+DOMAIN;ACCESS_PRIVILEGES
+TYPE;FORMAT_TYPE_NAME
+TYPE;OWNER
+TYPE;TYPE_TYPE
+TYPE;TYPE_SIZE
+TYPE;ELEMENTS
+TYPE;DESCRIPTION
+TYPE;ACCESS_PRIVILEGES
+EXTENSION;OWNER
+EXTENSION;VERSION
+EXTENSION;DESCRIPTION
+STATISTICS;OWNER
+STATISTICS;DEFINITION
+STATISTICS;NDISTINCT
+STATISTICS;DEPENDENCIES
+STATISTICS;MCV
+STATISTICS;STATISTICS_TARGET
+STATISTICS;DESCRIPTION</value>
+  </data>
+  <data name="refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\refresh.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sextant" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sextant.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

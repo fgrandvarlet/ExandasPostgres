@@ -1,0 +1,549 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>À propos de {0}</value>
+  </data>
+  <data name="AboutMenu" xml:space="preserve">
+    <value>&amp;A propos...</value>
+  </data>
+  <data name="ActivateAddition" xml:space="preserve">
+    <value>Activer l'ajout d'un enregistrement</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Ajouter</value>
+  </data>
+  <data name="ApplicationRestarted" xml:space="preserve">
+    <value>L'application va être redémarrée pour prise en compte.</value>
+  </data>
+  <data name="Apply" xml:space="preserve">
+    <value>A&amp;ppliquer</value>
+  </data>
+  <data name="AreYouSureDelete" xml:space="preserve">
+    <value>Êtes-vous sûr de vouloir supprimer l'enregistrement suivant :</value>
+  </data>
+  <data name="AtLeastOneSchemaMappingRequired" xml:space="preserve">
+    <value>Au moins une correspondance de schéma obligatoire</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>&amp;Annuler</value>
+  </data>
+  <data name="CancelButton" xml:space="preserve">
+    <value>Annuler</value>
+  </data>
+  <data name="CannotDelete" xml:space="preserve">
+    <value>Impossible de supprimer cet enregistrement car il intervient dans au moins un jeu de comparaison.</value>
+  </data>
+  <data name="CheckingTheConnection" xml:space="preserve">
+    <value>Vérification de la connexion</value>
+  </data>
+  <data name="Checks" xml:space="preserve">
+    <value>contraintes de vérification</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Fermer</value>
+  </data>
+  <data name="Compact" xml:space="preserve">
+    <value>Compacter</value>
+  </data>
+  <data name="CompactionCompleted" xml:space="preserve">
+    <value>Compactage terminé</value>
+  </data>
+  <data name="CompactLocalDatabase" xml:space="preserve">
+    <value>Compacter la base de données locale</value>
+  </data>
+  <data name="CompactLocalDatabaseMenu" xml:space="preserve">
+    <value>&amp;Compacter la base de données locale</value>
+  </data>
+  <data name="ComparisonReport" xml:space="preserve">
+    <value>Rapport de comparaison</value>
+  </data>
+  <data name="ComparisonSetDetail" xml:space="preserve">
+    <value>Détail jeu de comparaison</value>
+  </data>
+  <data name="ComparisonSetID" xml:space="preserve">
+    <value>ID jeu de comparaison</value>
+  </data>
+  <data name="ComparisonSetList" xml:space="preserve">
+    <value>Liste des jeux de comparaison</value>
+  </data>
+  <data name="ComparisonSetName" xml:space="preserve">
+    <value>Nom du jeu de comparaison</value>
+  </data>
+  <data name="ComparisonSetNameRequired" xml:space="preserve">
+    <value>Nom du jeu de comparaison obligatoire</value>
+  </data>
+  <data name="ComparisonSets" xml:space="preserve">
+    <value>Jeux de comparaison</value>
+  </data>
+  <data name="ConnectionFailed" xml:space="preserve">
+    <value>Echec de la connexion.</value>
+  </data>
+  <data name="ConnectionID" xml:space="preserve">
+    <value>ID connexion</value>
+  </data>
+  <data name="ConnectionName" xml:space="preserve">
+    <value>Nom de la connexion</value>
+  </data>
+  <data name="ConnectionNameRequired" xml:space="preserve">
+    <value>Nom de la connexion obligatoire</value>
+  </data>
+  <data name="ConnectionsComparisonSets" xml:space="preserve">
+    <value>C&amp;onnexions et jeux de comparaison</value>
+  </data>
+  <data name="Database" xml:space="preserve">
+    <value>Base de données</value>
+  </data>
+  <data name="DatabaseRequired" xml:space="preserve">
+    <value>Base de données obligatoire</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Supprimer</value>
+  </data>
+  <data name="DeleteRecord" xml:space="preserve">
+    <value>Suppression de l'enregistrement ?</value>
+  </data>
+  <data name="DeltaOf" xml:space="preserve">
+    <value>Delta des {0}</value>
+  </data>
+  <data name="Domains" xml:space="preserve">
+    <value>domaines</value>
+  </data>
+  <data name="DoYouConfirmGeneration" xml:space="preserve">
+    <value>Confirmez-vous la génération du rapport de comparaison ?</value>
+  </data>
+  <data name="Entity" xml:space="preserve">
+    <value>Entité</value>
+  </data>
+  <data name="ExandasPostgresError" xml:space="preserve">
+    <value>Erreur ExandasPostgres</value>
+  </data>
+  <data name="Exclusions" xml:space="preserve">
+    <value>contraintes d'exclusion</value>
+  </data>
+  <data name="ExportConnectionsComparisonSets" xml:space="preserve">
+    <value>Exporter les connexions et jeux de comparaison</value>
+  </data>
+  <data name="ExportMenu" xml:space="preserve">
+    <value>&amp;Exporter</value>
+  </data>
+  <data name="ExportPerformed" xml:space="preserve">
+    <value>Exportation effectuée dans le fichier :</value>
+  </data>
+  <data name="Extensions" xml:space="preserve">
+    <value>extensions</value>
+  </data>
+  <data name="File" xml:space="preserve">
+    <value>&amp;Fichier</value>
+  </data>
+  <data name="FileSizeColon" xml:space="preserve">
+    <value>Taille du fichier :</value>
+  </data>
+  <data name="FilterSettings" xml:space="preserve">
+    <value>Paramètres de filtrage</value>
+  </data>
+  <data name="ForeignKeys" xml:space="preserve">
+    <value>clés étrangères</value>
+  </data>
+  <data name="ForeignTableColumns" xml:space="preserve">
+    <value>colonnes de table distante</value>
+  </data>
+  <data name="ForeignTables" xml:space="preserve">
+    <value>tables distantes</value>
+  </data>
+  <data name="FormError" xml:space="preserve">
+    <value>Erreur de validation des données du formulaire.</value>
+  </data>
+  <data name="ForPostgres" xml:space="preserve">
+    <value>pour PostgreSQL</value>
+  </data>
+  <data name="Functions" xml:space="preserve">
+    <value>fonctions</value>
+  </data>
+  <data name="GenerateComparisonReport" xml:space="preserve">
+    <value>Générer le rapport de comparaison</value>
+  </data>
+  <data name="GenerationInProgress" xml:space="preserve">
+    <value>Génération du rapport de comparaison en cours...</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>&amp;Aide</value>
+  </data>
+  <data name="Host" xml:space="preserve">
+    <value>Hôte</value>
+  </data>
+  <data name="Hostname" xml:space="preserve">
+    <value>Nom d'hôte</value>
+  </data>
+  <data name="HostnameRequired" xml:space="preserve">
+    <value>Hôte obligatoire</value>
+  </data>
+  <data name="ImportConnectionsComparisonSets" xml:space="preserve">
+    <value>Importer des connexions et jeux de comparaison à partir d'un fichier</value>
+  </data>
+  <data name="ImportMenu" xml:space="preserve">
+    <value>&amp;Importer</value>
+  </data>
+  <data name="ImportPerformed" xml:space="preserve">
+    <value>Importation des connexions et jeux de comparaison effectuée.</value>
+  </data>
+  <data name="IndexColumns" xml:space="preserve">
+    <value>colonnes d'index</value>
+  </data>
+  <data name="Indexes" xml:space="preserve">
+    <value>index</value>
+  </data>
+  <data name="Label" xml:space="preserve">
+    <value>Libellé</value>
+  </data>
+  <data name="LastComparisonReport" xml:space="preserve">
+    <value>Dernier rapport de comparaison</value>
+  </data>
+  <data name="LastReportTime" xml:space="preserve">
+    <value>Dernier rapport</value>
+  </data>
+  <data name="LaunchComparisonReport" xml:space="preserve">
+    <value>Lancement du rapport de comparaison ?</value>
+  </data>
+  <data name="ListSchemaMappings" xml:space="preserve">
+    <value>Liste des correspondances de schéma</value>
+  </data>
+  <data name="LoadingObjects" xml:space="preserve">
+    <value>Chargement des {0} {1}</value>
+  </data>
+  <data name="LocalDatabase" xml:space="preserve">
+    <value>Base de données locale</value>
+  </data>
+  <data name="LocalDatabaseBackup" xml:space="preserve">
+    <value>Sauvegarde de la base de données locale</value>
+  </data>
+  <data name="LocalDatabaseColon" xml:space="preserve">
+    <value>Base de données locale :</value>
+  </data>
+  <data name="LocalDatabaseSize" xml:space="preserve">
+    <value>&amp;Taille de la base de données locale</value>
+  </data>
+  <data name="MaterializedViewColumns" xml:space="preserve">
+    <value>colonnes de vue matérialisée</value>
+  </data>
+  <data name="MaterializedViews" xml:space="preserve">
+    <value>vues matérialisées</value>
+  </data>
+  <data name="Modify" xml:space="preserve">
+    <value>Modifier</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="NoButton" xml:space="preserve">
+    <value>Non</value>
+  </data>
+  <data name="NotSpecified" xml:space="preserve">
+    <value>&lt;Non renseigné&gt;</value>
+  </data>
+  <data name="ObjectInSource" xml:space="preserve">
+    <value>Objet dans source absent en cible</value>
+  </data>
+  <data name="ObjectInTarget" xml:space="preserve">
+    <value>Objet dans cible absent en source</value>
+  </data>
+  <data name="ObjectName" xml:space="preserve">
+    <value>Nom d'objet</value>
+  </data>
+  <data name="OperationCanceled" xml:space="preserve">
+    <value>Opération annulée.</value>
+  </data>
+  <data name="ParentObject" xml:space="preserve">
+    <value>Objet parent</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>Mot de passe</value>
+  </data>
+  <data name="PasswordRequired" xml:space="preserve">
+    <value>Mot de passe obligatoire</value>
+  </data>
+  <data name="PleaseCheckExcel" xml:space="preserve">
+    <value>Veuillez vérifier que le document n'est pas déjà ouvert dans Excel.</value>
+  </data>
+  <data name="PortRequired" xml:space="preserve">
+    <value>Port obligatoire</value>
+  </data>
+  <data name="PrimaryKeys" xml:space="preserve">
+    <value>clés primaires</value>
+  </data>
+  <data name="Property" xml:space="preserve">
+    <value>Propriété</value>
+  </data>
+  <data name="PropertyDifference" xml:space="preserve">
+    <value>Différence de propriété</value>
+  </data>
+  <data name="PropertyNameRequired" xml:space="preserve">
+    <value>Nom de propriété obligatoire dans ce contexte</value>
+  </data>
+  <data name="PurgeComparisonReports" xml:space="preserve">
+    <value>Purger les rapports de comparaison</value>
+  </data>
+  <data name="PurgingComparisonReports" xml:space="preserve">
+    <value>Purge des rapports de comparaison</value>
+  </data>
+  <data name="PurgingMetadata" xml:space="preserve">
+    <value>Purge des tables des métadonnées</value>
+  </data>
+  <data name="Quit" xml:space="preserve">
+    <value>&amp;Quitter</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>Rafraîchir</value>
+  </data>
+  <data name="RestoringLocalDatabase" xml:space="preserve">
+    <value>Restauration de la base de données locale</value>
+  </data>
+  <data name="SaveTheFilterSettings" xml:space="preserve">
+    <value>Enregistrez ici les paramètres de filtrage applicables au jeu de comparaison pour exclure les lignes correspondantes dans le rapport de comparaison.</value>
+  </data>
+  <data name="SchemaDoesNotExistSource" xml:space="preserve">
+    <value>Le schéma [{0}] n'existe pas dans la base de données source [{1}]</value>
+  </data>
+  <data name="SchemaDoesNotExistTarget" xml:space="preserve">
+    <value>Le schéma [{0}] n'existe pas dans la base de données cible [{1}]</value>
+  </data>
+  <data name="SchemaMapping" xml:space="preserve">
+    <value>Correspondance de schéma</value>
+  </data>
+  <data name="SchemaMappingDetail" xml:space="preserve">
+    <value>Détail correspondance de schéma</value>
+  </data>
+  <data name="SchemaMappingID" xml:space="preserve">
+    <value>ID correspondance de schéma</value>
+  </data>
+  <data name="Sequences" xml:space="preserve">
+    <value>séquences</value>
+  </data>
+  <data name="ServerConnectionDetail" xml:space="preserve">
+    <value>Détail connexion serveur</value>
+  </data>
+  <data name="ServerConnections" xml:space="preserve">
+    <value>Connexions serveur</value>
+  </data>
+  <data name="ServerConnectionsList" xml:space="preserve">
+    <value>Liste des connexions serveur</value>
+  </data>
+  <data name="Source" xml:space="preserve">
+    <value>source</value>
+  </data>
+  <data name="SourceConnection" xml:space="preserve">
+    <value>Connexion source</value>
+  </data>
+  <data name="SourceDatabase" xml:space="preserve">
+    <value>Base de données source</value>
+  </data>
+  <data name="SourceSchema" xml:space="preserve">
+    <value>Schéma source</value>
+  </data>
+  <data name="SourceSchemaRequired" xml:space="preserve">
+    <value>Schéma source obligatoire</value>
+  </data>
+  <data name="SourceServerConnection" xml:space="preserve">
+    <value>Connexion serveur source</value>
+  </data>
+  <data name="SourceServerConnectionRequired" xml:space="preserve">
+    <value>Connexion serveur source obligatoire</value>
+  </data>
+  <data name="SourceValue" xml:space="preserve">
+    <value>Valeur source</value>
+  </data>
+  <data name="Statistics" xml:space="preserve">
+    <value>statistiques étendues</value>
+  </data>
+  <data name="SuccessfulConnection" xml:space="preserve">
+    <value>Connexion réussie</value>
+  </data>
+  <data name="TableColumns" xml:space="preserve">
+    <value>colonnes de table</value>
+  </data>
+  <data name="Tables" xml:space="preserve">
+    <value>tables</value>
+  </data>
+  <data name="Target" xml:space="preserve">
+    <value>cible</value>
+  </data>
+  <data name="TargetConnection" xml:space="preserve">
+    <value>Connexion cible</value>
+  </data>
+  <data name="TargetDatabase" xml:space="preserve">
+    <value>Base de données cible</value>
+  </data>
+  <data name="TargetSchema" xml:space="preserve">
+    <value>Schéma cible</value>
+  </data>
+  <data name="TargetSchemaRequired" xml:space="preserve">
+    <value>Schéma cible obligatoire</value>
+  </data>
+  <data name="TargetServerConnection" xml:space="preserve">
+    <value>Connexion serveur cible</value>
+  </data>
+  <data name="TargetServerConnectionRequired" xml:space="preserve">
+    <value>Connexion serveur cible obligatoire</value>
+  </data>
+  <data name="TargetValue" xml:space="preserve">
+    <value>Valeur cible</value>
+  </data>
+  <data name="Tools" xml:space="preserve">
+    <value>&amp;Outils</value>
+  </data>
+  <data name="Triggers" xml:space="preserve">
+    <value>déclencheurs</value>
+  </data>
+  <data name="Truncated" xml:space="preserve">
+    <value>TRONQUÉ</value>
+  </data>
+  <data name="Types" xml:space="preserve">
+    <value>types</value>
+  </data>
+  <data name="UnableToDeleteLastSchemaMapping" xml:space="preserve">
+    <value>Impossible de supprimer la dernière correspondance de schéma.</value>
+  </data>
+  <data name="Uniques" xml:space="preserve">
+    <value>uniques</value>
+  </data>
+  <data name="User" xml:space="preserve">
+    <value>Utilisateur</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>Nom utilisateur</value>
+  </data>
+  <data name="UserNameRequired" xml:space="preserve">
+    <value>Nom utilisateur obligatoire</value>
+  </data>
+  <data name="ViewColumns" xml:space="preserve">
+    <value>colonnes de vue</value>
+  </data>
+  <data name="ViewComparisonReport" xml:space="preserve">
+    <value>Consulter le rapport de comparaison</value>
+  </data>
+  <data name="Views" xml:space="preserve">
+    <value>vues</value>
+  </data>
+  <data name="Warning" xml:space="preserve">
+    <value>Attention</value>
+  </data>
+  <data name="YesButton" xml:space="preserve">
+    <value>Oui</value>
+  </data>
+</root>
